@@ -59,7 +59,7 @@ nav ul li a:hover {
 /* Home Section */
 #home {
     position: relative;
-    background-image: url('QC2.jpg'); /* Add your image here */
+    background-image: url('Images/QC2.jpg'); /* Add your image here */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
