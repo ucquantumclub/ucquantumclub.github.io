@@ -97,6 +97,31 @@ nav ul li a:hover {
     background-color: darkred;
 }
 
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px solid #f0f0f0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
 /* Section Styles */
 .section {
     padding: 60px 20px;
