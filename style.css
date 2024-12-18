@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* Home Section */
+#home {
+    position: relative;
+    background-image: url('QC2.jpg'); /* Add your image here */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: left; /* Align text to the left */
+    color: white;
+}
+
+.home-content {
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.join-button {
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.join-button:hover {
+    background-color: darkred;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* About Us Section */
+#about {
+
+    background-color: rgb(255, 206, 206);
+}
+
+
+/* Centering Contact Us Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact h2, #contact p {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
