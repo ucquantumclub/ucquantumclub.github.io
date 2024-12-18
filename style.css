@@ -109,6 +109,13 @@ nav ul li a:hover {
         flex-direction: column;
         width: 100%;
     }
+    
+
+
+
+    /* nav ul.show {
+        display: flex; /* Show the menu when the class 'show' is added */
+    } */
 
     nav ul li {
         margin: 0;
