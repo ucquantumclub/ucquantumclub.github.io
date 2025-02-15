@@ -86,7 +86,48 @@ nav ul li a:hover {
     max-width: 600px;
 }
 
+
+/* join button check */
 .join-button {
+    background-color: red;
+    color: white;
+    padding: 12px 1px 8px 1px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px; /* Add some space between the buttons */
+    vertical-align: middle; /* Align with the image button */
+    height: 30px; /* Set a fixed height */
+    width: 150px;
+    line-height: normal; /* Ensure normal line height */
+    text-align: center; /* Center the text horizontally */
+}
+
+.join-button:hover {
+    background-color: darkred;
+}
+
+.discord-button img {
+    height: 20px; /* Adjust the height as needed */
+    vertical-align: middle; /* Align with the text button */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  Optional: Add a subtle shadow */
+}
+
+
+.discord-button {
+    display: inline-block;
+    vertical-align: middle; /* Align with the text button */
+    padding: 0; /* Remove any padding */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+
+
+
+/* .join-button {
     background-color: red;
     color: white;
     padding: 15px 30px;
@@ -98,7 +139,7 @@ nav ul li a:hover {
 
 .join-button:hover {
     background-color: darkred;
-}
+} */
 
 .menu-icon {
     display: none;
