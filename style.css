@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -91,7 +91,7 @@ nav ul li a:hover {
 .join-button {
     background-color: red;
     color: white;
-    padding: 12px 1px 8px 1px;
+    padding: 15px 1px 5px 1px;
     font-size: 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -127,25 +127,26 @@ nav ul li a:hover {
 
 
 
-/* .join-button {
-    background-color: red;
-    color: white;
-    padding: 15px 30px;
-    font-size: 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.join-button:hover {
-    background-color: darkred;
-} */
 
 .menu-icon {
     display: none;
     font-size: 30px;
     cursor: pointer;
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px; /* Increase the font size */
+    font-weight: bold; /* Optional: Make the font bold */
+}
+
+nav ul li a:hover {
+    color: red;
+    font-size: 18px; /* Ensure the hover state has the same font size */
+    font-weight: bold; /* Optional: Make the font bold */
+}
+
 
 @media screen and (max-width: 768px) {
     nav ul {
@@ -167,6 +168,8 @@ nav ul li a:hover {
         padding: 10px 0;
         border-top: 1px solid #f0f0f0;
     }
+
+
 
     .menu-icon {
         display: block;
@@ -224,6 +227,11 @@ nav ul li a:hover {
 
 #contact h2, #contact p {
     text-align: center;
+}
+
+/* Text line height */
+p {
+    line-height: 1.4; /* Adjust the value as needed */
 }
 
 /* Footer Styles */
