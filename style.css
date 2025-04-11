@@ -170,7 +170,7 @@ nav ul li a:hover::after {
 }
 
 /* Team Section */
-#team {
+#team, #faculty {
     padding: 100px 20px;
     background-color: #f7fafc;
 }
