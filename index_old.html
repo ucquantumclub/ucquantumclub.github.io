@@ -5,21 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UC Quantum Club</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="banner">
-            <div class="logo-container">
+            <div class="logo-container" style="margin-left: 40px;">
                 <img src="Images/logo.jpg" alt="Quantum Club Logo" class="logo">
             </div>
             <nav>
-                <div class="menu-icon" onclick="toggleMenu()">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
                 <ul id="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#team">Team</a></li>
@@ -42,14 +36,9 @@
         <div class="home-content">
             <h1>Welcome to the <br>UC Quantum Club</h1>
             <p>The UC Quantum Club connects students to quantum computing opportunities, fostering collaboration, learning, and innovation through events and networking.</p>
-            <div class="cta-buttons">
-                <a href="https://forms.office.com/r/YTwC6v5bMC" class="join-button">
-                    <i class="fas fa-user-plus"></i> Join the Club!
-                </a>
-                <a href="https://discord.gg/EauRZu8tHV" class="discord-button">
-                    <img src="Images/join-us-on-discord.png" alt="Join Us on Discord">
-                </a>
-            </div>
+            <a href="https://forms.office.com/r/YTwC6v5bMC" class="join-button">Join the Club!</a>
+            <a href="https://discord.gg/EauRZu8tHV" class="discord-button">
+                <img src="Images/join-us-on-discord.png" alt="Join Us on Discord" style="height: 50px;"></a>
         </div>
     </section>
 
@@ -89,13 +78,15 @@
         </div>
     </section>
 
-    <section id="faculty" class="section">
+    <section id="team" class="section">
         <h2>Faculty Advisor</h2>
-        <div class="faculty-container">
-            <div class="faculty-member">
+        <div class="team-container">
+            <div class="team-member">
                 <img src="Images/Viki.jpg" alt="Viki Kumar Prasad">
                 <h3><a href="https://profiles.ucalgary.ca/viki-kumar-prasad" target="_blank">Prof. Viki Kumar Prasad</a></h3>
+                <!-- <p>Faculty Advisor</p> -->
             </div>
+            
         </div>
     </section>
 
@@ -104,15 +95,17 @@
         <p>The University of Calgary Quantum Club aims to foster collaboration among students interested in quantum computing by facilitating academic and professional networking through workshops, information sessions, and hackathons. It promotes professional development and builds a strong community of individuals passionate about quantum science and technology.</p>
     </section>
 
+
+
     <section id="contact" class="section">
         <h2>Contact Us</h2>
         <p>If you have any questions or would like to get in touch, please email us at <a href="mailto:ucquantumclub@gmail.com">ucquantumclub@gmail.com</a>.</p>
         <p>Follow us on social media:</p>
-        <div class="social-media">
-            <a href="https://discord.gg/EauRZu8tHV" target="_blank" aria-label="Discord">
-                <i class="fab fa-discord"></i>
-            </a>
-        </div>
+    <div class="social-media">
+        <a href="https://discord.gg/EauRZu8tHV" target="_blank">
+            <img src="Images/discord-logo-blue.png" alt="Discord" style="height: 50px;">
+        </a>
+    </div>
     </section>
 
     <footer>
