@@ -159,6 +159,25 @@ nav ul li a:hover::after {
     transition: transform 0.3s ease;
 }
 
+.linkedin-button {
+    background-color: #fff;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+
+.linkedin-button:hover {
+    transform: translateY(-2px);
+}
+
+.linkedin-button img {
+    height: 40px;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+
 .discord-button:hover {
     transform: translateY(-2px);
 }
@@ -170,9 +189,11 @@ nav ul li a:hover::after {
 }
 
 /* Team Section */
-#team, #faculty {
+#team,
+#faculty {
     padding: 100px 20px;
     background-color: #f7fafc;
+    text-align: center;
 }
 
 .team-container {
@@ -283,6 +304,7 @@ nav ul li a:hover::after {
 #about {
     padding: 100px 20px;
     background-color: #fff5f5;
+    text-align: center;
 }
 
 #about h2 {
@@ -317,7 +339,8 @@ nav ul li a:hover::after {
     margin: 0 10px;
     transition: transform 0.3s ease;
     font-size: 2.5rem;
-    color: #5865F2; /* Discord blue */
+    color: #5865F2;
+    /* Discord blue */
 }
 
 .social-media a:hover {
@@ -334,12 +357,26 @@ footer {
 }
 
 /* Section Headers */
+.section h1 {
+    font-size: 2.5rem;
+    color: #fcfcfc;
+    position: relative;
+    display: inline-block;
+}
+
 .section h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #2d3748;
     position: relative;
     display: inline-block;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .section h2:after {
@@ -387,13 +424,89 @@ footer {
     .team-container {
         grid-template-columns: 1fr;
     }
-    
+
     .cta-buttons {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .join-button {
         margin-bottom: 15px;
     }
+}
+
+main.section {
+    padding-top: 100px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main.section h1,
+main.section h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+main.section p,
+main.section ul,
+main.section ol {
+    margin-left: 1.5rem;
+    line-height: 1.6;
+}
+
+main.section ul,
+main.section ol {
+    padding-left: 1.5rem;
+}
+
+main.extra-gap {
+    display: block;
+    /* just to be safe */
+    padding-top: 120px;
+    /* bigger than your header height */
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Style for the dropdown link */
+.dropdown>a {
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* directly below Events */
+    left: 0;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dropdown links */
+.dropdown-content li a {
+    display: block;
+    padding: 10px 15px;
+    color: #2d3748;
+    text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
