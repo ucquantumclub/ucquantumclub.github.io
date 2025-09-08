@@ -16,14 +16,15 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
 }
 
 .banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 95%;
+    margin: 0;
     padding: 0 20px;
 }
 
@@ -33,7 +34,7 @@ header {
 }
 
 .logo {
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
     height: auto;
     transition: transform 0.3s ease;
@@ -44,9 +45,11 @@ header {
 }
 
 /* Navigation */
+
 nav {
+    flex: 1;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
 }
 
 .menu-icon {
@@ -56,10 +59,11 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -131,21 +135,40 @@ nav ul li a:hover::after {
     gap: 20px;
 }
 
+.cta-buttons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    /* same width for all */
+    height: 55px;
+    /* same height for all */
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
 .join-button {
     background-color: #e53e3e;
     color: white;
-    padding: 15px 30px;
-    font-size: 1.1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    /* fixed width like others */
+    height: 55px;
+    /* fixed height like others */
+    font-size: 1rem;
     text-decoration: none;
     border-radius: 8px;
-    display: inline-flex;
-    align-items: center;
     transition: all 0.3s ease;
     font-weight: 500;
 }
 
 .join-button i {
     margin-right: 8px;
+    font-size: 1.2rem;
 }
 
 .join-button:hover {
@@ -154,9 +177,62 @@ nav ul li a:hover::after {
     box-shadow: 0 4px 12px rgba(229, 62, 62, 0.3);
 }
 
+
+/* Shared CTA button style */
+.cta-buttons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    /* same width for all */
+    height: 55px;
+    /* same height for all */
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Discord button */
 .discord-button {
-    display: inline-block;
-    transition: transform 0.3s ease;
+    background-color: #5865F2;
+    /* Discord blue */
+    color: #fff;
+}
+
+.discord-button img {
+    max-height: 60%;
+    /* keeps logo proportional */
+    max-width: 80%;
+}
+
+/* LinkedIn button */
+.linkedin-button {
+    background-color: #fff;
+    /* LinkedIn blue */
+    color: #fff;
+}
+
+.linkedin-button img {
+    max-height: 60%;
+    max-width: 80%;
+}
+
+/* Hover states */
+.discord-button:hover,
+.linkedin-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.linkedin-button:hover {
+    transform: translateY(-2px);
+}
+
+.linkedin-button img {
+    height: 40px;
+    border-radius: 8px;
+    vertical-align: middle;
 }
 
 .discord-button:hover {
@@ -170,19 +246,23 @@ nav ul li a:hover::after {
 }
 
 /* Team Section */
-#team, #faculty {
+#team,
+#faculty {
     padding: 100px 20px;
     background-color: #f7fafc;
+    text-align: center;
 }
 
 .team-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    justify-content: center;
 }
+
 
 .team-member {
     background: white;
@@ -283,6 +363,7 @@ nav ul li a:hover::after {
 #about {
     padding: 100px 20px;
     background-color: #fff5f5;
+    text-align: center;
 }
 
 #about h2 {
@@ -317,7 +398,8 @@ nav ul li a:hover::after {
     margin: 0 10px;
     transition: transform 0.3s ease;
     font-size: 2.5rem;
-    color: #5865F2; /* Discord blue */
+    color: #5865F2;
+    /* Discord blue */
 }
 
 .social-media a:hover {
@@ -334,12 +416,26 @@ footer {
 }
 
 /* Section Headers */
+.section h1 {
+    font-size: 2.5rem;
+    color: #fcfcfc;
+    position: relative;
+    display: inline-block;
+}
+
 .section h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #2d3748;
     position: relative;
     display: inline-block;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .section h2:after {
@@ -387,13 +483,89 @@ footer {
     .team-container {
         grid-template-columns: 1fr;
     }
-    
+
     .cta-buttons {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .join-button {
         margin-bottom: 15px;
     }
+}
+
+main.section {
+    padding-top: 100px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main.section h1,
+main.section h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+main.section p,
+main.section ul,
+main.section ol {
+    margin-left: 1.5rem;
+    line-height: 1.6;
+}
+
+main.section ul,
+main.section ol {
+    padding-left: 1.5rem;
+}
+
+main.extra-gap {
+    display: block;
+    /* just to be safe */
+    padding-top: 120px;
+    /* bigger than your header height */
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Style for the dropdown link */
+.dropdown>a {
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* directly below Events */
+    left: 0;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dropdown links */
+.dropdown-content li a {
+    display: block;
+    padding: 10px 15px;
+    color: #2d3748;
+    text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
