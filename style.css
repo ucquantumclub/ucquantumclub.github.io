@@ -245,6 +245,27 @@ nav ul li a:hover::after {
     vertical-align: middle;
 }
 
+/* Events Section */
+#events {
+    padding: 100px 20px;
+    background-color: #fff5f5;
+    text-align: center;
+}
+
+#events h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2d3748;
+}
+
+#events p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+}
+
 /* Team Section */
 #team,
 #faculty {
