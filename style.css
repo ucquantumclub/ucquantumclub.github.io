@@ -46,16 +46,16 @@ header {
 
 /* Navigation */
 
-nav {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
 .menu-icon {
     display: none;
     font-size: 24px;
     cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul {
@@ -476,6 +476,15 @@ footer {
         display: block;
     }
 
+    .fallfest-theme .menu-icon {
+        display: block;
+    }
+
+    .fallfest-theme #nav-links {
+        background-color: #1f1f1f;
+        color: #fff;
+    }
+
     nav ul {
         display: none;
         position: absolute;
@@ -609,7 +618,24 @@ main.extra-gap {
 }
 
 .fallfest-theme nav ul li a {
-    color: #f0f0f0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.fallfest-theme nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #e53e3e;
+    transition: width 0.3s ease;
 }
 
 .fallfest-theme .fallfest-title {
@@ -628,15 +654,6 @@ main.extra-gap {
     -webkit-text-fill-color: transparent;
     text-align: center;
     display: inline-block;
-}
-
-.fallfest-theme nav ul li a::after {
-    background-color: #c593fd;
-    /* cyan accent underline */
-}
-
-.fallfest-theme nav ul li a:hover {
-    color: #c593fd;
 }
 
 /* Section Headings */
