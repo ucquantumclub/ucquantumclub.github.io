@@ -4,12 +4,14 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #2d3748;
+    color: #fff;
+    background-color: #1f1f1f;
 }
 
 /* Header Styles */
 header {
-    background-color: #ffffff;
+    background-color: #1f1f1f;
+    color: #f0f0f0;
     padding: 15px 0;
     position: fixed;
     width: 100%;
@@ -21,6 +23,7 @@ header {
 
 .banner {
     display: flex;
+    color: #f0f0f0;
     justify-content: space-between;
     align-items: center;
     width: 95%;
@@ -75,6 +78,7 @@ nav ul li a {
     padding: 8px 0;
     position: relative;
     transition: color 0.3s ease;
+    color: #f0f0f0;
 }
 
 nav ul li a::after {
@@ -248,14 +252,22 @@ nav ul li a:hover::after {
 /* Events Section */
 #events {
     padding: 100px 20px;
-    background-color: #fff5f5;
+    background-color: #1f1f1f;
+    color: #fff5f5;
     text-align: center;
 }
 
 #events h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #2d3748;
+    color: #fff5f5;
+}
+
+
+#events h3 {
+    font-size: 1.5rem;
+    margin: 5px;
+    color: #fff5f5;
 }
 
 #events p {
@@ -263,14 +275,23 @@ nav ul li a:hover::after {
     margin: 0 auto;
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #4a5568;
+    color: #fff5f5;
+}
+
+#events a {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #c593fd;
 }
 
 /* Team Section */
 #team,
 #faculty {
     padding: 100px 20px;
-    background-color: #f7fafc;
+    background-color: #181616;
+    color: #fff5f5;
     text-align: center;
 }
 
@@ -286,10 +307,11 @@ nav ul li a:hover::after {
 
 
 .team-member {
-    background: white;
+    background-color: #1f1f1f;
+    color: #fff5f5;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -316,7 +338,7 @@ nav ul li a:hover::after {
 }
 
 .team-member h3 a {
-    color: #2d3748;
+    color: #cfcfcf;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -326,7 +348,12 @@ nav ul li a:hover::after {
 }
 
 .team-member p {
-    color: #718096;
+    color: #abb3be;
+    font-size: 1rem;
+}
+
+.team-member p a {
+    color: #c593fd;
     font-size: 1rem;
 }
 
@@ -340,10 +367,11 @@ nav ul li a:hover::after {
 }
 
 .faculty-member {
-    background: white;
+    background-color: #1f1f1f;
+    color: #fff5f5;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -371,7 +399,7 @@ nav ul li a:hover::after {
 }
 
 .faculty-member h3 a {
-    color: #2d3748;
+    color: #fff5f5;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -383,14 +411,15 @@ nav ul li a:hover::after {
 /* About Section */
 #about {
     padding: 100px 20px;
-    background-color: #fff5f5;
+    background-color: #363131;
+    color: #fff5f5;
     text-align: center;
 }
 
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #2d3748;
+    color: #fff5f5;
 }
 
 #about p {
@@ -398,15 +427,20 @@ nav ul li a:hover::after {
     margin: 0 auto;
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #4a5568;
+    color: #fff5f5;
 }
 
 /* Contact Section */
 #contact {
     padding: 100px 20px;
-    background-color: #f7fafc;
+    background-color: #1c252b;
     text-align: center;
 }
+
+#contact p a {
+    color: #c593fd;
+}
+
 
 .social-media {
     margin-top: 30px;
@@ -419,7 +453,7 @@ nav ul li a:hover::after {
     margin: 0 10px;
     transition: transform 0.3s ease;
     font-size: 2.5rem;
-    color: #5865F2;
+    color: #c593fd;
     /* Discord blue */
 }
 
@@ -437,6 +471,7 @@ footer {
 }
 
 /* Section Headers */
+
 .section h1 {
     font-size: 2.5rem;
     color: #fcfcfc;
@@ -447,7 +482,6 @@ footer {
 .section h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #2d3748;
     position: relative;
     display: inline-block;
 }
@@ -537,6 +571,18 @@ main.section h2 {
     margin-bottom: 0.5rem;
 }
 
+
+main.section h3 {
+    color: #9b9494;
+    margin-top: 20px;
+    font-size: 1.8rem
+}
+
+main.section p a {
+    color: #c593fd;
+    font-size: 1 rem;
+}
+
 main.section p,
 main.section ul,
 main.section ol {
@@ -608,7 +654,7 @@ main.extra-gap {
     font-family: 'Inter', 'Montserrat', sans-serif;
     background-color: #121212;
     /* dark background */
-    color: #f0f0f0;
+    color: #fff5f5;
 }
 
 /* Header */
