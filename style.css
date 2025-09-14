@@ -41,6 +41,7 @@ header {
     width: 100%;
     height: auto;
     transition: transform 0.3s ease;
+    filter: brightness(0) invert(1);
 }
 
 .logo:hover {
@@ -307,11 +308,10 @@ nav ul li a:hover::after {
 
 
 .team-member {
-    background-color: #1f1f1f;
+    background-color: #313131;
     color: #fff5f5;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -367,11 +367,10 @@ nav ul li a:hover::after {
 }
 
 .faculty-member {
-    background-color: #1f1f1f;
+    background-color: #313131;
     color: #fff5f5;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -620,7 +619,8 @@ main.extra-gap {
     top: 100%;
     /* directly below Events */
     left: 0;
-    background-color: #fff;
+    background-color: #1f1f1f;
+    color: #fff5f5;
     min-width: 200px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     z-index: 999;
@@ -633,12 +633,12 @@ main.extra-gap {
 .dropdown-content li a {
     display: block;
     padding: 10px 15px;
-    color: #2d3748;
+    color: #fff5f5;
     text-decoration: none;
 }
 
 .dropdown-content li a:hover {
-    background-color: #f5f5f5;
+    background-color: #6b6b6b;
 }
 
 /* Show dropdown on hover */
@@ -767,4 +767,79 @@ body.fallfest-theme section.show {
     padding: 100px 20px;
     background-color: #f7fafc;
     text-align: center;
+}
+
+.dark-schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    background: #1a1a1a;
+    color: #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+.dark-schedule thead {
+    background: linear-gradient(90deg, #c593fd, #e53e3e);
+}
+
+.dark-schedule th,
+.dark-schedule td {
+    padding: 14px 20px;
+    text-align: left;
+}
+
+.dark-schedule th {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.dark-schedule tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease;
+}
+
+.dark-schedule tbody tr:hover {
+    background: rgba(197, 147, 253, 0.1);
+}
+
+.dark-schedule td {
+    font-size: 0.95rem;
+    color: #ddd;
+}
+
+.dark-schedule td:first-child {
+    font-weight: 600;
+    color: #c593fd;
+    text-align: center;
+}
+
+.register-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.register-btn {
+    display: inline-block;
+    padding: 14px 36px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #121212;
+    background: linear-gradient(90deg, #c593fd, #00c4cc);
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 229, 255, 0.4);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.register-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 229, 255, 0.6);
+    background: linear-gradient(90deg, #00c4cc, #c593fd);
 }
