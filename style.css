@@ -79,7 +79,6 @@ nav ul li a {
     padding: 8px 0;
     position: relative;
     transition: color 0.3s ease;
-    color: #f0f0f0;
 }
 
 nav ul li a::after {
@@ -507,6 +506,7 @@ footer {
 @media screen and (max-width: 768px) {
     .menu-icon {
         display: block;
+        margin-right: 10px;
     }
 
     .fallfest-theme .menu-icon {
@@ -817,6 +817,61 @@ body.fallfest-theme section.show {
     color: #c593fd;
     text-align: center;
 }
+
+/* ---------- Mobile Tile Layout ---------- */
+@media (max-width: 768px) {
+
+    .dark-schedule,
+    .dark-schedule thead,
+    .dark-schedule tbody,
+    .dark-schedule th,
+    .dark-schedule tr,
+    .dark-schedule td {
+        display: block;
+        width: 100%;
+    }
+
+    .dark-schedule thead {
+        display: none;
+        /* Hide header row */
+    }
+
+    .dark-schedule tr {
+        background: #1a1a1a;
+        margin: 0 0 0.8rem;
+        /* less spacing between tiles */
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 10px;
+        padding: 0.8rem 1rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    }
+
+    .dark-schedule td {
+        border: none;
+        padding: 6px 0;
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    .dark-schedule td::before {
+        content: attr(data-label) ": ";
+        /* show heading before value */
+        font-weight: 600;
+        color: #c593fd;
+        display: inline-block;
+        min-width: 90px;
+        /* keeps labels aligned */
+        font-size: 0.85rem;
+    }
+
+    .dark-schedule td:first-child {
+        font-weight: 600;
+        color: #c593fd;
+        text-align: left;
+    }
+
+}
+
 
 .register-container {
     text-align: center;
