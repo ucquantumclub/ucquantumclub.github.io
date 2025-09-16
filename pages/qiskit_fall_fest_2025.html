@@ -5,55 +5,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Qiskit Fall Fest - UC Quantum Club</title>
     <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
-  <body>
+  <body class="fallfest-theme">
     <header>
       <div class="banner">
         <div class="logo-container">
-          <img src="../Images/logo.jpg" alt="Quantum Club Logo" class="logo" />
+          <img
+            src="../Images/logo-clean.png"
+            alt="Quantum Club Logo"
+            class="logo"
+          />
         </div>
         <nav>
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
           <ul id="nav-links">
-            <li><a href="../index.html">← Back to Home</a></li>
+            <li>
+              <a href="../index.html">← Back to Home</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="section extra-gap">
       <section>
-        <div style="text-align: center">
-          <h2>Qiskit Fall Fest 2025</h2>
-        </div>
+        <h1 class="fallfest-title"><span>Qiskit Fall Fest 2025 is here!</span></h1>
         <img
-          src="../Images/thumbnail_2_Fall Fest_LinkedinTwitter_Extension.png"
+          src="../Images/qff.svg"
           alt="Fallfest Logo"
-          style="width: 100%; margin-top: 10px"
+          style="width: 25%; margin: 10px auto; display: block"
         />
-
         <p>
           The Qiskit Fall Fest is a global series of quantum computing events
           hosted by student-led organizations and supported by IBM Quantum. At
-          University of Calgary Quantum Club, our Fall Fest brings together students, researchers,
-          and industry professionals to learn, collaborate, and innovate with
-          Qiskit and quantum technologies.
+          University of Calgary Quantum Club, our Fall Fest brings together
+          students, researchers, and industry professionals to learn,
+          collaborate, and innovate with Qiskit and quantum technologies.
+        </p>
+        <img
+          src="../Images/thumbnail_2_Fall Fest_LinkedinTwitter_Extension.png"
+          alt="Fallfest Header"
+          style="width: 102%; margin-top: 10px; border-radius: 16px"
+        />
+      </section>
+
+      <section>
+        <div class="register-container">
+          <a
+            href="#"
+            target="_blank"
+            class="register-btn"
+          >
+            REGISTER NOW
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Event Details</h2>
+        <table class="dark-schedule">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Event</th>
+              <th>Mode</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Event No.">1</td>
+              <td data-label="Event">Quantum and Qiskit 101 (IBM Lecture)</td>
+              <td data-label="Mode">Hybrid</td>
+              <td data-label="Date">Mon, Oct 27, 2025</td>
+              <td data-label="Time">TBD</td>
+              <td data-label="Location">University of Calgary</td>
+            </tr>
+            <tr>
+              <td data-label="Event No.">2</td>
+              <td data-label="Event">Basic Quantum Algorithms with Qiskit (Workshop)</td>
+              <td data-label="Mode">Hybrid</td>
+              <td data-label="Date">Tue, Oct 28, 2025</td>
+              <td data-label="Time">TBD</td>
+              <td data-label="Location">University of Calgary</td>
+            </tr>
+            <tr>
+              <td data-label="Event No.">3</td>
+              <td data-label="Event">Advanced Quantum Algorithms with Qiskit (Workshop)</td>
+              <td data-label="Mode">Hybrid</td>
+              <td data-label="Date">Wed, Oct 29, 2025</td>
+              <td data-label="Time">TBD</td>
+              <td data-label="Location">University of Calgary</td>
+            </tr>
+            <tr>
+              <td data-label="Event No.">4</td>
+              <td data-label="Event">Lab Tours (tentative)</td>
+              <td data-label="Mode">In-person</td>
+              <td data-label="Date">Fri, Oct 31, 2025</td>
+              <td data-label="Time">3 - 4 pm</td>
+              <td data-label="Location">Quantum Labs at UCalgary</td>
+            </tr>
+            <tr>
+              <td data-label="Event No.">5</td>
+              <td data-label="Event">Kahoot Quiz</td>
+              <td data-label="Mode">In-person</td>
+              <td data-label="Date">Fri, Oct 31, 2025</td>
+              <td data-label="Time">4 - 5 pm</td>
+              <td data-label="Location">Quantum City</td>
+            </tr>
+            <tr>
+              <td data-label="Event No.">6</td>
+              <td data-label="Event">Social Meetup</td>
+              <td data-label="Mode">In-person</td>
+              <td data-label="Date">Fri, Oct 31, 2025</td>
+              <td data-label="Time">5 - 6 pm</td>
+              <td data-label="Location">Quantum City</td>
+            </tr>
+            <tr>
+              <td data-label="Event No.">7</td>
+              <td data-label="Event">Hackathon (24 hrs)</td>
+              <td data-label="Mode">Hybrid</td>
+              <td data-label="Date">Fri, Oct 31 - Sat, Nov 1, 2025</td>
+              <td data-label="Time">TBD</td>
+              <td data-label="Location">TBD</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size: 0.9em; margin-top: 5px; text-align: center">
+          *Schedule subject to change. Stay tuned for updates!
+        </p>
+        <p>Qiskit Fall Fest 2025 events organized by University of Calgary Quantum Club are open to undergraduates, graduates (MSc and PhD), postdocs, and faculty members at University of Calgary.</p>
+          <p>
+        Students from other universities in Canada are also welcome to participate and should contact us for details (see "Contact Us" section below).
         </p>
       </section>
 
+      <section>
+        <div class="register-container">
+          <a
+            href="#"
+            target="_blank"
+            class="register-btn"
+          >
+            REGISTER NOW
+          </a>
+        </div>
+      </section>
+
+      <!-- POSTER HERE PLEASE, cut and paste this block where reqd-->
       <!-- <section>
-        <h2>Event Details</h2>
-        <ul>
-          <li><strong>Date:</strong> (exact date TBA)</li>
-          <li><strong>Location:</strong> University of Calgary, Alberta</li>
-        </ul>
+        POSTER
+        <img
+          src="../Images/thumbnail_2_Fall Fest_LinkedinTwitter_Extension.png"
+          alt="Fallfest Logo"
+          style="width: 100%; margin-top: 10px; border-radius: 16px"
+        />
       </section> -->
 
-      <section>
-        <div style="text-align: center">
-          <h3>Registration</h3>
-        </div>
-        <p>Registration will open soon. Stay tuned!</p>
+      <section><h2>Organizers</h2>
+      <p><b>Lead Organizer: <a href="https://www.linkedin.com/in/sabah-ud-din-ahmad/">Sabah Ud Din Ahmad</a></b></p>
+      <p>Co-Organizers: Gaurav Shukla, Amhimmid Ahfaaf</p>
+      <p>Team Members: Ashwin Sivakumar, Ujjwal Gautam, Vikrant Kumar, Sharanya Chougule</p>
+      
       </section>
-      <section id="contact" class="section">
+      
+
+      <section class="section contact">
         <!-- <h2>Stay Connected</h2>
         <p>
           For announcements & updates, join our
@@ -69,7 +193,9 @@
         <p>
           If you have any questions or would like to get in touch, please email
           us at
-          <a href="mailto:ucquantumclub@gmail.com">ucquantumclub@gmail.com</a>.
+          <a style="color: #c593fd" href="mailto:ucquantumclub@gmail.com"
+            >ucquantumclub@gmail.com</a
+          >.
         </p>
         <p>Follow us on social media:</p>
         <div class="social-media">
