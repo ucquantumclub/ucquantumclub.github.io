@@ -898,3 +898,64 @@ body.fallfest-theme section.show {
     box-shadow: 0 6px 20px rgba(0, 229, 255, 0.6);
     background: linear-gradient(90deg, #00c4cc, #c593fd);
 }
+
+/* ===============================
+   Event Marquee (Fall Fest)
+   =============================== */
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin: 24px 0;
+    padding: 14px 0;
+    background: rgba(197, 147, 253, 0.08);
+    border-top: 1px solid rgba(197, 147, 253, 0.35);
+    border-bottom: 1px solid rgba(197, 147, 253, 0.35);
+}
+ 
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 30s linear infinite;
+}
+ 
+.marquee-wrapper:hover .marquee-track {
+    animation-play-state: paused;
+}
+ 
+.marquee-item {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0 32px;
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #c593fd;
+}
+ 
+.marquee-item::after {
+    content: "✦";
+    margin-left: 32px;
+    color: #c593fd;
+    opacity: 0.6;
+}
+ 
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+ 
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+        animation: none;
+    }
+    .marquee-wrapper {
+        overflow-x: auto;
+    }
+}
